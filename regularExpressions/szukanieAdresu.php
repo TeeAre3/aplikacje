@@ -1,5 +1,5 @@
 <?php
-    $wzorzec = '/((\bul\.)|(\bos\.))\S*/';
+    $wzorzec = '/((\bul\.)|(\bos\.))[A-z]+[0-9]+[A-z]/';
 
     $tekst="adres: ul.Kwiatowa 3a";
     if(preg_match($wzorzec, $tekst, $matches))
