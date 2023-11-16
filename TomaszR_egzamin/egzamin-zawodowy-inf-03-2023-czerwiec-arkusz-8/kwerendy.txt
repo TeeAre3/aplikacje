@@ -1,0 +1,4 @@
+kwerenda1: SELECT nazwa FROM towary WHERE promocja=1;
+kwerenda2: SELECT cena FROM towary WHERE nazwa="Markery 4 szt.";
+kwerenda3: SELECT dostawcy.id, dostawcy.nazwa, COUNT(towary.nazwa) FROM dostawcy INNER JOIN towary ON dostawcy.id = towary.idDostawcy WHERE dostawcy.id = towary.idDostawcy GROUP BY towary.idDostawcy;
+kwerenda4: ALTER TABLE dostawcy ADD COLUMN informacje text;
