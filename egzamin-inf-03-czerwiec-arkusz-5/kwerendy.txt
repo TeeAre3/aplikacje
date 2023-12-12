@@ -1,4 +1,0 @@
-kwerenda1: SELECT nazwa, cena FROM towary LIMIT 4;
-kwerenda2: SELECT cena FROM towary WHERE nazwa="Ekierka";
-kwerenda3: UPDATE dostawcy SET nazwa="Artykuly szkolne" WHERE id=2;
-kwerenda4: SELECT promocja, COUNT(*) AS podsumowanie FROM towary GROUP BY promocja; 
