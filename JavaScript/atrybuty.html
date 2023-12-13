@@ -1,0 +1,82 @@
+<!-- <a href="https:\\onet.pl">onet.pl</a>
+<script>
+    let link=document.querySelector("a");
+    console.log(link);
+    let atrybut=link.getAttribute("href");
+    console.log(atrybut);
+</script> -->
+
+
+<!-- <a href="https:\\onet.pl">onet.pl</a>
+<a href="https:\\zsgsucha.pl">zsgsucha.pl</a>
+<script>
+    let linki=document.querySelectorAll("a");
+    console.log(linki);
+    let atrybut=linki[0].getAttribute("href");
+    console.log(atrybut);
+</script> -->
+    
+
+<!-- <a href="https:\\onet.pl">onet.pl</a>
+<button id="myButton" onclick="zmien()">Zmień link</button>
+<script>
+    function zmien(){
+        let link=document.querySelector("a");
+        link.setAttribute("href", "http:\\zsgsucha.pl");
+        link.innerHTML="zsgsucha.pl";
+    }
+</script> -->
+
+
+<!-- <img src="tulip.jpg">
+<button id="myButton" onclick="zmien()">Zmień obrazek</button>
+<script>
+    function zmien(){
+        let link=document.querySelector("img");
+        link.setAttribute("src","slimShady.jpg");
+    }
+</script> -->
+
+
+<!-- <h1>Tworzenie elementów</h1>
+<button id="myButton" onclick="dodaj()">Dodaj akapit</button>
+<div id="div1"></div>
+<script>
+    let i=1;
+    function dodaj(){
+        let akapit=document.createElement("p");
+        let content=document.createTextNode(i+". Nowy akapit");
+        akapit.appendChild(content);
+        let position=document.querySelector("#div1");
+        position.appendChild(akapit);
+        i++;
+    }
+</script> -->
+
+
+<!-- <h1>Usuwanie elementów</h1>
+<button id="myButton" onclick="remove()">Usuń akapit</button>
+<div id="div1">
+    <p id="p1">akapit pierwszy</p>
+    <p id="p2">akapit drugi</p>
+</div>
+<script>
+    function remove(){
+        let parent=document.querySelector("#div1");
+        let child=document.querySelector("#p1");
+        parent.removeChild(child);
+    }
+</script> -->
+
+
+<h1>Usuwanie elementów</h1>
+<div id="div1">
+    <p id="p1" onclick="remove(this)">akapit pierwszy</p>
+    <p id="p2" onclick="remove(this)">akapit drugi</p>
+</div>
+<script>
+    function remove(id){
+        let parent=document.querySelector("#div1");
+        parent.removeChild(id);
+    }
+</script>

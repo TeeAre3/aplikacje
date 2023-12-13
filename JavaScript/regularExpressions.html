@@ -1,0 +1,34 @@
+<!-- <p>wyszukiwanie tekstu 'być'</p>
+<script>
+    let tekst="być albo nie być";
+    let wzorzec=/być/;
+    let pozycja=tekst.search(wzorzec);
+    document.write("wyraz znaleziono na pozycji: "+pozycja);
+</script> -->
+
+
+<!-- <p>wyszukiwanie nr telefonu</p>
+<script>
+    let tekst="tel. 747839283";
+    let wzorzec=/\d\d\d\d\d\d\d\d\d/;
+    let pozycja=tekst.search(wzorzec);
+    document.write("wyraz znaleziono na pozycji: "+pozycja);
+</script> -->
+
+
+<!-- <p>wyszukiwanie kodu pocztowego</p>
+<script>
+    let tekst="kod 34-200 Sucha Beskidzka";
+    let wzorzec=/\d{2}-\d{3}/;
+    let pozycja=tekst.search(wzorzec);
+    document.write("znaleziono kod na pozycji: "+tekst.slice(pozycja, pozycja+6));
+</script> -->
+
+
+<p>wyszukiwanie pliku *.gif</p>
+<script>
+    let tekst="Ikona jest w pliku logo.gif";
+    let wzorzec=/\S*\.gif/i;
+    let pozycja=tekst.search(wzorzec);
+    document.write("znaleziono: "+tekst.slice(pozycja));
+</script>

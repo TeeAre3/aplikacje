@@ -1,0 +1,15 @@
+<button id="myButton">Wyświetl datę</button>
+<p id="demo"></p>
+
+<script>
+    document.querySelector("#myButton").onclick=displayDate;
+
+    function displayDate(){
+        let teraz = new Date();
+        let godzina = teraz.getHours();
+        let minuty = teraz.getMinutes();
+        let sekundy = teraz.getSeconds();
+        let czas = "godzina: "+godzina+":"+minuty+":"+sekundy;
+        document.querySelector("#demo").innerHTML = czas;
+    }
+</script>
