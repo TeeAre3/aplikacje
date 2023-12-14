@@ -25,10 +25,28 @@
 </script> -->
 
 
-<p>wyszukiwanie pliku *.gif</p>
+<!-- <p>wyszukiwanie pliku *.gif</p>
 <script>
     let tekst="Ikona jest w pliku logo.gif";
     let wzorzec=/\S*\.gif/i;
+    let pozycja=tekst.search(wzorzec);
+    document.write("znaleziono: "+tekst.slice(pozycja));
+</script> -->
+
+
+<!-- <p>wyszukiwanie adresu mailowego</p>
+<script>
+    let tekst="adres email: jan.wiepsz@gmail.com";
+    let wzorzec=/[\w_\.-]+@([-A-z0-9]+\.)+[A-z]/;
+    let pozycja=tekst.search(wzorzec);
+    document.write("znaleziono: "+tekst.slice(pozycja));
+</script> -->
+
+
+<p>wyszukiwanie daty</p>
+<script>
+    let tekst="Maków Podhalański 17.11.2022r";
+    let wzorzec=/([0123]?\d)[\. -\/]([01]?\d)[\. -\/](\d{4})/;
     let pozycja=tekst.search(wzorzec);
     document.write("znaleziono: "+tekst.slice(pozycja));
 </script>

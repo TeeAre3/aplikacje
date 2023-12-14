@@ -1,0 +1,9 @@
+<h3>clearTimeout - zatrzymuje uruchomioną funkcję</h3>
+<script>
+    function myFunction(){
+        console.log("jakiś komunikat");
+    }
+    let funkcja=setTimeout(myFunction, 10000);//10000msek
+    console.log("funkcja uruchomiona");
+    clearTimeout(funkcja);
+</script>
